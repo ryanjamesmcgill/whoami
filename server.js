@@ -6,7 +6,7 @@ var useragent = require('express-useragent');
 
 var app = express();
 
-
+app.enable('trust proxy')
 app.use(useragent.express());
 app.get('/api/whoami', function(req, res){
     var output = {

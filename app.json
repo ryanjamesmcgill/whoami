@@ -1,0 +1,11 @@
+{
+  "name": "whoami",
+  "description": "freecodecamp.com project for 'Request Header Parser Microservice'",
+  "repository": "https://github.com/ryanjamesmcgill/whoami.git",
+  "logo": "",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "image": "heroku/nodejs"
+}
