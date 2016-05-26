@@ -21,7 +21,6 @@ app.get('/api/whoami', function(req, res){
 
 
     res.status(200).set({
-        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
         'Access-Control-Allow-Origin': '*',
         'Content-Type ': 'application/json'
     }).send(JSON.stringify(output));
