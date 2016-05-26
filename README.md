@@ -1,6 +1,6 @@
 # API Basejump: Request Header Parser Microservice aka 'whoami'
 
-<strong>live demo:</strong> <a href="#">heroku-link</a>
+<strong>live demo:</strong> <a href="https://whoami-rjm.herokuapp.com/api/whoami">https://whoami-rjm.herokuapp.com/api/whoami</a>
 
 ## Usage
 
