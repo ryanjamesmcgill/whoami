@@ -8,6 +8,13 @@ var app = express();
 
 app.enable('trust proxy')
 app.use(useragent.express());
+app.get('/api/node', function(req, res){
+    res.status(200).set({
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+    }).send(JSON.stringify(process.versions));
+});
+
 app.get('/api/whoami', function(req, res){
     var output = {
         ipaddress: req.ip,
@@ -22,7 +29,7 @@ app.get('/api/whoami', function(req, res){
 
     res.status(200).set({
         'Access-Control-Allow-Origin': '*',
-        'Content-Type ': 'application/json'
+        'Content-Type': 'application/json'
     }).send(JSON.stringify(output));
 });
 
