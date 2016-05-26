@@ -8,7 +8,7 @@ var app = express();
 
 app.enable('trust proxy')
 app.use(useragent.express());
-app.get('/api/node', function(req, res){
+app.get('/api/version', function(req, res){
     res.status(200).set({
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json'
